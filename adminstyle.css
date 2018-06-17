@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Candara", sans-serif;
+    background-color: #f0f0f0;
+}
+.sidenav{
+    width: 100%;
+    background-color: rgb(37, 35, 35);
+    position: fixed;
+    padding: 10px 20px;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Groundtech Nig. LTD</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.1.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="icon" type="img/jpg" href="images/icon.png">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+	<style>
+		.head{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/cranepipe.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			position: relative;
+		}
+		.company_name{
+			margin-top: 200px;
+		}
+		.company_name h3{
+			color: #fff;
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+		.company_name p{
+			color: darkorange;
+			font-size: 24px;
+
+		}
+		.service{
+			width: 100%;
+			height: 50%;
+			background-color: rgb(51,57,63);
+			position: relative;	
+		}
+		.service-content{
+			color: #fff;
+			text-align: justify;
+			line-height: 2;
+			margin-top: 5px;
+		}
+		.btn{
+			margin-bottom: 30px;
+		}
+		.btn:hover{
+			transition: all .9s ease-in;
+		}
+		.col-sm-4{
+			position: relative;
+			cursor: pointer;
+		}
+		.picture img{
+			border-radius: 10px;
+			opacity: 0.7;
+		}
+		.description{
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 15px;
+		  right: 0;
+		  background: rgba(41, 46, 52, 0.6);
+		  color: #fff;
+		  visibility: hidden;
+		  opacity: 0;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  transition: opacity .5s ease-in, visibility .5s ease-in;			
+		}
+		.description a{
+			text-decoration: none;
+			color: #fff;
+		}
+		.col-sm-4:hover .description{
+			visibility: visible;
+			opacity: 1
+		}
+		.description-text{
+			transition: all .5s ease-in;
+  			transform: translateY(1em);
+  			text-align: center;
+		}
+		.col-sm-4:hover .description-text{
+			transform: translateY(0);
+		}
+		.footer{
+			border-top: 1px solid white;
+			width: 100%;
+			height: 30px;
+			padding: 10px;
+			position: absolute;
+			margin-top: -5px;
+		}
+		.row{
+			margin: 30px auto;
+			text-align: center;
+			padding: 10px;
+		}
+		.contact .row i{
+			color: #fff;
+			font-size: 22px;
+			margin-top: 15px;
+		}
+		
+		.contact .row p{
+			color: white;
+			font-family: "Candara", sans-serif;
+			letter-spacing: 2px;
+			margin-top: 15px;
+		}
+		.client-text{
+			background-color: #32373d;
+			width: 100%;
+			height: 50%;
+		}
+		.client-text h1{
+			color: #fff;
+			margin: 30px auto;
+			text-align: center;
+			border-bottom: 1px solid #fff;
+		}
+		.client-text p{
+			color: #fff;
+			text-align: center;
+			line-height: 2;
+			letter-spacing: 2px;
+		}
+		.clientLogo{
+			margin: 50px auto;
+		}
+		.clientLogo img{
+			margin-left: 50px;
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body>
+
+<!--NAVIGATION BAR WITH TOGGLER-->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center fixed-top">
+		<a class="navbar-brand logo" href="#">
+			GT<span style="color: darkorange">NL</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link disabled" href="home.html"><i class="fa fa-home"></i> Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="about.html"><i class="fa fa-globe"></i> About</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="services.html"><i class="fa fa-wrench"></i> Services</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html"><i class="fa fa-phone"></i> Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+<!--HEAD CONTENT-->
+		<div class="head jumbotron">
+			<div class="company_name text-center">
+				<h3>Groundtech Nig. Limited</h3>
+				<p> <em>...Piling and Construction Experts!</em></p>
+			</div>
+		</div>	
+<!--ABOUT CONTENT-->
+		<div class="container-fluid about-text" style="margin-top: -30px;">
+			<h4 class="display-4 text-center" style="font-weight: bold; color: #33393f">About Us</h4>
+			<p class="text-justify"> Groundtech Nigeria Limited is a Nigerian incorporated and fully-owned company. Groundtech is a team of professionals with reputable qualifications and industrial accreditations. Therefore, Groundtech focuses its expertise on construction and developing innovative and technical solutions for Piling/Foundation works, Heavy Duty Fleet, Production/Maintenance Facilities. Our proven commitment to provide clients with first class Management Services, Reliable Facility Maintenance...
+			</p>
+			<center><a class="btn btn-outline-dark" role="button" href="about.html">Read More</a></center>
+		</div>
+
+<!--SERVICE CONTENT-->
+		<div class="service jumbotron">
+			<div class="service-content text-center">
+				<h1>WHAT WE CAN DO?</h1>
+				<p>GROUND TECH operates and maintains several Civil Engineering Projects, Piling Works, Jetty, Foundation,
+				Equipment Servicing, Patnership and Collaboration. 
+				Examples in Every Chapter This HTML tutorial contains hundreds of HTML examples.
+				With our online HTML editor, you can edit the HTML, and click on a button to view the result.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 picture">
+					<img src="images/project2.jpg" style="width: 103.5%; height: 100%;">
+					<div class="description">
+						<a href="services.html" class="description-text">
+							<i class="fa fa-thumbs-up" style="font-size: 30px"></i> <br>
+							<h1>Piling and Jetty Works</h1> <br> 
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-4 picture">
+					<img src="images/project13.jpg" style="width: 103.5%; height: 100%;">
+					<div class="description">
+						<a href="services.html" class="description-text">
+							<i class="fa fa-thumbs-up" style="font-size: 30px"></i> <br>
+							<h1>Launching and Mooring</h1> <br>
+						</a>
+					</div>	
+				</div>
+				<div class="col-sm-4 picture">
+					<img src="images/project10.jpg" style="width: 103.5%; height: 100%">
+					<div class="description">
+						<a href="services.html" class="description-text">
+							<i class="fa fa-thumbs-up" style="font-size: 30px"></i> <br>
+							<h1>Maintenance and Lifting</h1> <br>
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+<!--OUR CLIENTS-->
+		<div class="client container">
+			<div class="client-text">
+				<div class="row">
+					<div class="col-sm-4">
+						<h1>OUR <span style="color: darkorange">CLIENTS</span></h1>
+						<p>Groundtech is positioned to deliver uncompromising level of quality and efficient professional solutions and support to our clients in areas of patnership, constructions, piling and jetty works, maintenance services and engineering/technical works all year round.</p>
+					</div>
+					<div class="col-sm-8">
+						<div class="clientLogo">
+							<img src="images/agip.png" alt="Agip" width="128" height="128">
+							<img src="images/multiplan.jpeg" alt="Multiplan" width="128" height="120">
+							<img src="images/nddc.jpeg" alt="Nddc" width="128" height="128">
+							<img src="images/shell.png" alt="Shell" width="128" height="128">
+							<img src="images/chevron.jpeg" alt="Chevron" width="128" height="128">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+<!--CONTACT US SECTION-->
+		<div class="contact jumbotron">
+			<div class="interest text-center">
+				<h1>INTERESTED?</h1>
+				<p>PLEASE <a href="contact.html"><span style="color: darkorange">CONTACT US</span></a></p>
+			</div>
+				<div class="row">
+					<div class="col-sm-4 phone">
+						<i class="fa fa-phone"></i> <br>
+						<p>080 334 100 21</p>
+					</div>
+					<div class="col-sm-4 map">
+						<i class="fa fa-map-marker"></i> <br>
+						<p>Groundtech Yard, Alcon Road Woji, Portharcourt</p>
+					</div>
+					<div class="col-sm-4 envelope">
+						<i class="fa fa-envelope"></i> <br>
+						<p>groundtechng@yahoo.com</p>
+					</div>
+				</div>
+		</div>	
+
+<!--FOOTER SECTION-->
+		<footer class="footer container-fluid text-center">
+			<div class="social-icon">
+				<ul class="icon">
+					<li>
+						<i class="fa fa-facebook"></i>
+					</li>
+					<li>
+						<i class="fa fa-google-plus"></i>
+					</li>
+					<li>
+						<i class="fa fa-linkedin"></i>
+					</li>
+					<li>
+						<i class="fa fa-yahoo"></i>
+					</li>
+					<li>
+						<i class="fa fa-twitter"></i>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="nav-menu">
+				<ul class="menu">
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="services.html">Services</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+				<div class="brand">
+					<p>&copy; 2018 All rights reserved. Groundtech Nigeria Limited</p>
+				</div>
+			</div>
+		</footer>	
+</body>
+</html>

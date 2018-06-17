@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(50,56,62);
+}
+.logo{
+	font-size: 30px;
+}
+.about-text{
+	width: 100%;
+	height: 50%;
+	line-height: 2;
+	background-color: #fff;
+}
+.contact{
+	width: 100%;
+	height: 50%;
+	background-color: rgb(51,57,63);
+	position: relative;			
+}
+.interest h1{
+	color: #fff;
+}
+.interest p{
+	color: #fff;
+	font-size: 42px;
+	font-weight: bold;
+}
+.interest a{
+	text-decoration: none;
+}
+footer{
+	width: 100%;
+	height: 50vh;
+	margin: 30px auto;
+	padding: 0;
+}
+.social-icon{
+	margin-top: 50px;
+}
+ul li{
+	text-transform: uppercase;
+	text-decoration: none;
+	list-style: none;
+	display: inline-flex;
+	line-height: 2px;
+	margin-right: 50px;
+}
+.icon{
+	font-size: 22px;
+	color: #fff;
+	padding: 50px;
+}
+.icon li{
+	text-align: center;
+	cursor: pointer;
+}
+.icon .fa-facebook{
+	background-color: #3b5997;
+	padding: 20px 50px 20px 50px;
+}
+.icon .fa-facebook:hover{
+	color: #3b5998;
+	background-color: #fff;
+	padding: 20px 50px 20px 50px;
+	transition: all 0.9s ease-out;
+}
+.icon .fa-google-plus{
+	background-color: #df2f2e;
+	padding: 20px 50px 20px 50px;
+}
+.icon .fa-google-plus:hover{
+	color: #df2f2e;
+	background-color: #fff;
+	padding: 20px 50px 20px 50px;
+	transition: all 0.9s ease-in;
+}
+.icon .fa-linkedin{
+	background-color: #067bb4;
+	padding: 20px 50px 20px 50px;
+}
+.icon .fa-linkedin:hover{
+	color: #067bb4;
+	background-color: #fff;
+	padding: 20px 50px 20px 50px;
+	transition: all 0.9s ease-out;
+}
+.icon .fa-yahoo{
+	background-color: #222b3a;
+	padding: 20px 50px 20px 50px;
+}
+.icon .fa-yahoo:hover{
+	color: #222b3a;
+	background-color: #fff;
+	padding: 20px 50px 20px 50px;
+	transition: all 0.9s ease-in;
+}
+.icon .fa-twitter{
+	background-color: #56aced;
+	padding: 20px 50px 20px 50px;
+}
+.icon .fa-twitter:hover{
+	color: #56aced;
+	background-color: #fff;
+	padding: 20px 50px 20px 50px;
+	transition: all 0.9s ease-out;
+}
+.menu li{
+	line-height: 2;
+}
+.menu li a{
+	color: #fff;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Candara", sans-serif;
+}
+.menu li a:hover{
+	color: lightgreen;
+}
+.brand{
+	color: #fff;
+	font-family: "Candara", sans-serif;
+	letter-spacing: 2px;
+}	
