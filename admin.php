@@ -20,7 +20,7 @@
 <body>
     <div class="sidenav" id="mySidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Expenses Made</a>
+        <a href="#">Expense Made</a>
         <a href="#">Workers Details</a>
         <a href="#">Equipment List</a>
         <span style="color: #fff" onclick="openNav()"><i class="fa fa-bars"></i></span>
